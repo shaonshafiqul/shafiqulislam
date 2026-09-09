@@ -78,6 +78,12 @@ export default function Footer() {
                 Skills
               </Link>
               <Link
+                href="/services"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                Services
+              </Link>
+              <Link
                 href="/contact"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
               >
