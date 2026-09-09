@@ -11,6 +11,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Skills", href: "/skills" },
+  { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -95,6 +96,15 @@ export default function Navbar() {
                   </Link>
                 );
               })}
+              {/* New nav item by shaon */}
+              <Link
+              href="https://www.upwork.com/freelancers/~016c6bb1cb24751a63"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-3 px-5 py-2 rounded-full border border-blue-500 text-blue-400 text-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white"
+              >
+              Hire Me
+              </Link>
             </div>
           </div>
 

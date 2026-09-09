@@ -2,6 +2,7 @@
 
 import {
   Heart,
+  Facebook,
   Instagram,
   Linkedin,
   Mail,
@@ -14,46 +15,41 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
+    
     {
-      name: "YouTube",
-      href: "https://www.youtube.com/@naimurmotion",
-      icon: Youtube,
+      name: "Facebook",
+      href: "https://www.facebook.com/shaonshafiqul/",
+      icon: Facebook,
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/naimurvisuals/?hl=en",
+      href: "https://www.instagram.com/shaonshafiqul/",
       icon: Instagram,
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/naimur202164/",
+      href: "https://www.linkedin.com/in/shaonshafiqul/",
       icon: Linkedin,
     },
     {
-      name: "Twitter",
-      href: "#",
-      icon: Twitter,
-    },
-    {
       name: "Email",
-      href: "mailto:contact.naimur202164@gmail.com",
+      href: "mailto:shaon.inbox@gmail.com",
       icon: Mail,
     },
   ];
 
   return (
     <footer className="glass-panel border-t border-white/5 mt-20 backdrop-blur-3xl">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-6xl mx-auto px-6 py-16 ">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-              Naimur Rahman
+              Shafiqul Islam
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Video Editor and Motion Graphics Designer passionate about
-              creating visual stories with style, precision, and cinematic
-              magic.
+              Video Editor focused on creating clean, engaging,
+              and high-retention content for YouTube and social media.
             </p>
           </div>
 
@@ -122,17 +118,17 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-16 pt-8 text-center">
           <p className="text-gray-500 text-sm flex items-center justify-center gap-1.5">
-            Made with{" "}
-            <Heart className="text-red-500 fill-red-500/20" size={14} /> by{" "}
+            {/* Made with{" "}
+            <Heart className="text-red-500 fill-red-500/20" size={14} /> by */}{" "}
             <a
-              href="https://www.linkedin.com/in/naimur202164//"
+              href="https://www.linkedin.com/in/shaonshafiqul/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors underline decoration-dotted underline-offset-4"
             >
-              Md. Naimur Rahman
+              Shafiqul Islam
             </a>{" "}
-            © {currentYear}
+            © {currentYear} All rights reserved
           </p>
         </div>
       </div>

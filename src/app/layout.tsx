@@ -14,17 +14,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Naimur Rahman – Video Editor & Motion Graphics Designer",
-    template: " | Naimur Rahman",
+    default: "Shafiqul Islam – Video Editor & Motion Graphics Designer",
+    template: " | Shafiqul Islam",
   },
   description:
-    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
+    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in Final Cut Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
-    "Naimur Rahman",
+    "Shafiqul Islam",
     "Video Editor",
     "Motion Graphics Designer",
-    "DaVinci Resolve",
-    "Premiere Pro",
+    "Final Cut Pro",
     "After Effects",
     "Color Grading",
     "YouTube Video Editing",
@@ -38,9 +37,9 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Naimur Rahman", url: "https://www.naimur.me" }],
-  creator: "Naimur Rahman",
-  publisher: "Naimur Rahman",
+  authors: [{ name: "Shafiqul Islam", url: "https://www.linkedin.com/in/shaonshafiqul/" }],
+  creator: "Shafiqul Islam",
+  publisher: "Shafiqul Islam",
   robots: {
     index: true,
     follow: true,
@@ -55,33 +54,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.naimur.me",
-    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    url: "https://www.linkedin.com/in/shaonshafiqul/",
+    title: "Shafiqul Islam – Video Editor & Motion Graphics Designer",
     description:
-      "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
-    siteName: "Naimur Rahman Portfolio",
+      "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using Final Cut Pro, and After Effects.",
+    siteName: "Shafiqul Islam Portfolio",
     images: [
       {
-        url: "/naimur.png",
+        url: "/shafiqul.png",
         width: 1200,
         height: 630,
-        alt: "Naimur Rahman - Video Editor",
+        alt: "Shafiqul Islam - Video Editor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    title: "Shafiqul Islam – Video Editor & Motion Graphics Designer",
     description:
       "Crafting cinematic edits, motion graphics, and powerful stories. Let's make your content stand out.",
-    creator: "@naimur_rahman", // update if you have a real Twitter handle
-    images: ["/naimur.png"],
+    creator: "@shaonshafiqul", // update if you have a real Twitter handle
+    images: ["/shafiqul.png"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://www.naimur.me",
+    canonical: "https://www.linkedin.com/in/shaonshafiqul/",
   },
   category: "Video Editing",
 };
@@ -103,13 +102,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Naimur Rahman",
-              url: "https://www.naimur.me",
-              image: "/naimur.png",
+              name: "Shafiqul Islam",
+              url: "https://www.linkedin.com/in/shaonshafiqul/",
+              image: "/shafiqul.png",
               sameAs: [
-                "https://www.naimur.me",
-                "https://www.linkedin.com/in/naimur202164/", // update if available
-                "https://www.youtube.com/@naimurmotion", // update if available
+                //"https://www.naimur.me",
+                "https://www.linkedin.com/in/shaonshafiqul/", // update if available
+                "https://www.facebook.com/ShaonShafiqul/", // update if available
                 // "https://twitter.com/naimur_rahman", // update if available
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",

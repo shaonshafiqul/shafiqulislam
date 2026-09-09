@@ -23,8 +23,8 @@ const CTASection = ({
       <GlassmorphismCard className="p-8">
         <h3 className="text-2xl font-semibold mb-4 text-white">{title}</h3>
         <p className="text-gray-300 mb-6 max-w-2xl mx-auto">{description}</p>
-        <Button asChild size="lg" variant="outline">
-          <a href={href}>
+        <Button asChild size="lg" variant="outline" className="transition-all duration-300 hover:!bg-blue-500 hover:!border-blue-500 hover:!text-white">
+          <a href={href} >
             {buttonText} <ArrowRight className="ml-2" size={20} />
           </a>
         </Button>

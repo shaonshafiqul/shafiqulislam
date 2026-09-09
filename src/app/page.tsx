@@ -100,7 +100,7 @@ export default function HomePage() {
               <span className="text-blue-400 font-medium"> powerful</span>.
             </p>
           </motion.div>
-
+          
           {/* Category Filter */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

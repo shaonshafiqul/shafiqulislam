@@ -67,7 +67,9 @@ export default function SkillsPage() {
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {videoEditingSkills.map((skill, index) => (
+            {videoEditingSkills
+              .filter((skill) => !skill.hidden)
+              .map((skill, index) =>  (
               <motion.div
                 key={skill.name}
                 initial={{ opacity: 0, x: -20 }}

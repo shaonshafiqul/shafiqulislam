@@ -18,10 +18,11 @@ export const videoEditingSkills = [
     description:
       "Professional color grading, editing, and audio post-production",
     color: "text-orange-400",
+    hidden: true,
   },
   {
-    name: "Adobe Premiere Pro",
-    image_link: "/tools/Adobe_Premiere_Pro_CC.png",
+    name: "Final Cut Pro",
+    image_link: "/tools/final_cut_pro.png",
     icon: Scissors,
     description:
       "Advanced video editing, multicam sync, and workflow optimization",
@@ -40,6 +41,7 @@ export const videoEditingSkills = [
     icon: Palette,
     description: "Thumbnail design, graphics creation, and image manipulation",
     color: "text-cyan-400",
+     hidden: true,
   },
   {
     name: "Adobe Audition",
@@ -47,6 +49,7 @@ export const videoEditingSkills = [
     icon: Volume2,
     description: "Audio editing, noise reduction, and sound enhancement",
     color: "text-green-400",
+    hidden: true,
   },
 ];
 
@@ -126,7 +129,7 @@ export const specializations = [
 
 export const achievements = [
   {
-    title: "50+ Projects Completed",
+    title: "100+ Projects Completed",
     description:
       "Successfully delivered over 100 video projects across various industries",
     icon: Award,
@@ -140,7 +143,7 @@ export const achievements = [
     color: "text-green-400",
   },
   {
-    title: "3+ Years Experience",
+    title: "2+ Years Experience",
     description:
       "Professional video editing experience with continuous skill development",
     icon: Camera,
