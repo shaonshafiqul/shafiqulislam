@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Shafiqul Islam – Video Editor & Motion Graphics Designer",
+    default: "Shafiqul Islam – Video Editor",
     template: " | Shafiqul Islam",
   },
   description:
