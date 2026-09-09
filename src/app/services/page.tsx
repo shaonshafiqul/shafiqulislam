@@ -231,7 +231,7 @@ export default function ServicesPage() {
                   className={`p-8 h-full relative ${pkg.popular ? "ring-2 ring-blue-500" : ""}`}
                 >
                   {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                       <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Most Popular
                       </span>
