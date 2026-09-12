@@ -8,7 +8,7 @@ export default function FramerLazyMotion({
     children: React.ReactNode;
 }) {
     return (
-        <LazyMotion features={domAnimation} strict>
+        <LazyMotion features={domAnimation}>
             {children}
         </LazyMotion>
     );

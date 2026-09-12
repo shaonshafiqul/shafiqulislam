@@ -6,11 +6,12 @@ import Footer from "@/components/footer";
 import JumpToTop from "@/components/jump-to-top";
 import MouseMoveEffect from "@/components/mouse-move-effect";
 import Navbar from "@/components/navbar";
+import SmoothScroll from "@/components/smooth-scroll";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-// const nunito = Nunito({ subsets: ["latin"] });q
+// const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     template: " | Shafiqul Islam",
   },
   description:
-    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in Final Cut Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
+    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Shafiqul Islam specializes in Final Cut Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
     "Shafiqul Islam",
     "Video Editor",
@@ -37,7 +38,12 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Shafiqul Islam", url: "https://www.linkedin.com/in/shaonshafiqul/" }],
+  authors: [
+    {
+      name: "Shafiqul Islam",
+      url: "https://www.linkedin.com/in/shaonshafiqul/",
+    },
+  ],
   creator: "Shafiqul Islam",
   publisher: "Shafiqul Islam",
   robots: {
@@ -73,7 +79,7 @@ export const metadata: Metadata = {
     title: "Shafiqul Islam – Video Editor & Motion Graphics Designer",
     description:
       "Crafting cinematic edits, motion graphics, and powerful stories. Let's make your content stand out.",
-    creator: "@shaonshafiqul", // update if you have a real Twitter handle
+    creator: "@shaonshafiqul",
     images: ["/shafiqul.png"],
   },
   verification: {
@@ -96,6 +102,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="theme-color" content="#020817" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -106,10 +113,8 @@ export default function RootLayout({
               url: "https://www.linkedin.com/in/shaonshafiqul/",
               image: "/shafiqul.png",
               sameAs: [
-                //"https://www.naimur.me",
-                "https://www.linkedin.com/in/shaonshafiqul/", // update if available
-                "https://www.facebook.com/ShaonShafiqul/", // update if available
-                // "https://twitter.com/naimur_rahman", // update if available
+                "https://www.linkedin.com/in/shaonshafiqul/",
+                "https://www.facebook.com/ShaonShafiqul/",
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",
               knowsAbout: [
@@ -133,6 +138,7 @@ export default function RootLayout({
           }}
         />
       </head>
+
       <body
         className={`${inter.className} min-h-screen text-white`}
         style={{
@@ -141,14 +147,16 @@ export default function RootLayout({
         }}
       >
         <div className="grid-background-large min-h-screen">
-          <>
+          <SmoothScroll>
               <MouseMoveEffect />
               <Navbar />
+
               <main>{children}</main>
+
               <Footer />
               <JumpToTop />
               <Toaster position="top-center" />
-          </>
+          </SmoothScroll>
         </div>
       </body>
     </html>
