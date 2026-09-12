@@ -149,8 +149,18 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   </motion.div>
+                  
                 ))}
+                 {/* Mobile Hire Me Button */}
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsOpen(false)}
+                    className="mt-4 block w-full rounded-full border border-blue-500 px-6 py-3 text-center font-medium text-blue-400 transition-all duration-300 hover:bg-blue-500 hover:text-white"
+                  >
+                    Hire Me
+                  </Link>
               </div>
+              
             </motion.div>
           )}
         </AnimatePresence>
