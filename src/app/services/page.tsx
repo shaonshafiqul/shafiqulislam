@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import GlassmorphismCard from "@/components/glassmorphism-card";
+import CTASection from "@/components/CTASection";
 import {
   Play,
   Palette,
@@ -112,13 +113,13 @@ export default function ServicesPage() {
         "Color correction",
         "Audio sync",
         "Simple graphics",
-        "1-2 revisions",
+        "1-9 revisions",
       ],
       popular: false,
     },
     {
       name: "Professional Edit",
-      price: "$100-250",
+      price: "$100-200",
       description: "Comprehensive editing for professional content",
       features: [
         "Advanced editing techniques",
@@ -126,13 +127,13 @@ export default function ServicesPage() {
         "Color grading",
         "Audio enhancement",
         "Custom animations",
-        "3-5 revisions",
+        "Unlimited revisions",
       ],
       popular: true,
     },
     {
       name: "Premium Package",
-      price: "$250-500",
+      price: "$200-450",
       description: "Full production service for high-end content",
       features: [
         "Complete post-production",
@@ -150,18 +151,25 @@ export default function ServicesPage() {
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-24 relative"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            My Services
+          {/* Spotlight Effect behind title */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-500/15 blur-[100px] rounded-full pointer-events-none" />
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mt-0 md:mt-16 mb-6 text-white tracking-tight relative z-10">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent">
+              My Services
+            </span>
           </h1>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            From concept to completion, I offer comprehensive video editing and
-            motion graphics services to bring your vision to life.
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed relative z-10">
+            Professional video editing and creative solutions designed to transform
+            your ideas into engaging, high-quality visual content that captures
+            attention and tells your story.
           </p>
         </motion.div>
 
@@ -231,7 +239,7 @@ export default function ServicesPage() {
                   className={`p-8 h-full relative ${pkg.popular ? "ring-2 ring-blue-500" : ""}`}
                 >
                   {pkg.popular && (
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                       <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Most Popular
                       </span>
@@ -323,28 +331,12 @@ export default function ServicesPage() {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.0 }}
-          className="text-center"
-        >
-          <GlassmorphismCard className="p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-white">
-              Ready to Start Your Project?
-            </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Let's discuss your project and create something amazing together.
-              I'm here to help bring your vision to life with professional video
-              editing and motion graphics.
-            </p>
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <a href="/contact">
-                Get a Quote <ArrowRight className="ml-2" size={20} />
-              </a>
-            </Button>
-          </GlassmorphismCard>
-        </motion.div>
+        <CTASection
+          title="Ready to Work Together?"
+          description="Let's work together to create professional, engaging, and high-quality video content that brings your ideas to life."
+          buttonText="Get Started"
+          href="/contact"
+        />
       </div>
     </div>
   );

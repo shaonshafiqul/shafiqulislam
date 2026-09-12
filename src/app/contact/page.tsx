@@ -59,12 +59,17 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-24 relative"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Get In Touch
+          {/* Spotlight Effect behind title */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-500/15 blur-[100px] rounded-full pointer-events-none" />
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mt-0 md:mt-16 mb-6 text-white tracking-tight relative z-10">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent">
+              Get In Touch
+            </span>
           </h1>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed relative z-10">
             Have a project in mind or want to collaborate? I'd love to hear from
             you. Let's create something amazing together!
           </p>
@@ -188,11 +193,22 @@ export default function ContactPage() {
                 Send Message
               </h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
+                {/* Honeypot field (hidden for spam prevention) */}
+                <div className="hidden" aria-hidden="true">
+                  <input
+                    id="honeypot"
+                    name="honeypot"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="name"
-                      className="text-sm text-gray-300 mb-2 block"
+                      className="text-sm text-gray-400 mb-2 block font-medium"
                     >
                       Name *
                     </label>
@@ -201,14 +217,14 @@ export default function ContactPage() {
                       name="name"
                       type="text"
                       required
-                      className="bg-gray-800/50 border-gray-600 text-white"
+                      className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
                       placeholder="Your name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="text-sm text-gray-300 mb-2 block"
+                      className="text-sm text-gray-400 mb-2 block font-medium"
                     >
                       Email *
                     </label>
@@ -217,7 +233,7 @@ export default function ContactPage() {
                       name="email"
                       type="email"
                       required
-                      className="bg-gray-800/50 border-gray-600 text-white"
+                      className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
                       placeholder="you@example.com"
                     />
                   </div>
@@ -226,30 +242,30 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="project-type"
-                    className="text-sm text-gray-300 mb-2 block"
+                    className="text-sm text-gray-400 mb-2 block font-medium"
                   >
                     Project Type
                   </label>
                   <select
                     id="project-type"
                     name="project-type"
-                    className="w-full bg-gray-800/50 border border-gray-600 text-white rounded-md px-3 py-2"
+                    className="w-full bg-white/[0.03] border border-white/10 text-white rounded-xl px-4 py-3 h-12 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500/50 transition-all custom-select"
                   >
-                    <option value="">Select project type</option>
-                    <option value="youtube">YouTube Video</option>
-                    <option value="social-media">Social Media Content</option>
-                    <option value="promo">Promotional Video</option>
-                    <option value="tutorial">Tutorial/Course</option>
-                    <option value="documentary">Documentary</option>
-                    <option value="animation">Logo Animation</option>
-                    <option value="other">Other</option>
+                    <option value="" className="bg-gray-900 text-gray-400">Select project type</option>
+                    <option value="youtube" className="bg-gray-900">YouTube Video</option>
+                    <option value="social-media" className="bg-gray-900">Social Media Content</option>
+                    <option value="promo" className="bg-gray-900">Promotional Video</option>
+                    <option value="tutorial" className="bg-gray-900">Tutorial/Course</option>
+                    <option value="documentary" className="bg-gray-900">Documentary</option>
+                    <option value="animation" className="bg-gray-900">Logo Animation</option>
+                    <option value="other" className="bg-gray-900">Other</option>
                   </select>
                 </div>
 
                 <div>
                   <label
                     htmlFor="timeline"
-                    className="text-sm text-gray-300 mb-2 block"
+                    className="text-sm text-gray-400 mb-2 block font-medium"
                   >
                     Timeline
                   </label>
@@ -257,7 +273,7 @@ export default function ContactPage() {
                     id="timeline"
                     name="timeline"
                     type="text"
-                    className="bg-gray-800/50 border-gray-600 text-white"
+                    className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
                     placeholder="e.g., 1 week, ASAP"
                   />
                 </div>
@@ -265,7 +281,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="text-sm text-gray-300 mb-2 block"
+                    className="text-sm text-gray-400 mb-2 block font-medium"
                   >
                     Project Details *
                   </label>
@@ -275,15 +291,16 @@ export default function ContactPage() {
                     required
                     rows={6}
                     placeholder="Tell me about your project..."
-                    className="bg-gray-800/50 border-gray-600 text-white resize-none"
+                    className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 resize-none p-4"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer"
+                  size="lg"
+                  className="w-full bg-white text-black hover:bg-gray-200 rounded-full h-14 text-base font-semibold shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all hover:scale-105 cursor-pointer mt-4"
                 >
-                  <Send className="mr-2" size={16} />
+                  <Send className="mr-2" size={18} />
                   Send Message
                 </Button>
               </form>
@@ -292,7 +309,7 @@ export default function ContactPage() {
                 <p className="text-gray-400 text-sm text-center">
                   Prefer to chat directly? Reach out on{" "}
                   <a
-                    href="https://wa.me/+8801640716430"
+                    href="https://wa.me/+8801580385556"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300"

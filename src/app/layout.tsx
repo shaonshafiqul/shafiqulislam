@@ -141,12 +141,14 @@ export default function RootLayout({
         }}
       >
         <div className="grid-background-large min-h-screen">
-          <MouseMoveEffect />
-          <Navbar />
-          <main className="pt-16">{children}</main>
-          <Footer />
-          <JumpToTop />
-          <Toaster position="top-center" />
+          <>
+              <MouseMoveEffect />
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+              <JumpToTop />
+              <Toaster position="top-center" />
+          </>
         </div>
       </body>
     </html>

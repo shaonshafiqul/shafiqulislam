@@ -44,15 +44,19 @@ export default function SkillsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-24 relative"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-            My Skills & Expertise
+          {/* Spotlight Effect behind title */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-500/15 blur-[100px] rounded-full pointer-events-none" />
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mt-0 md:mt-16 mb-6 text-white tracking-tight relative z-10">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent">
+              My Skills & Expertise
+            </span>
           </h1>
-          <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
-            With years of experience in video editing and motion graphics, I
-            bring technical expertise and creative vision to every project.
-            Here's what I can do for you.
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed relative z-10">
+            Combining creativity, technical expertise, and storytelling to turn
+            raw footage into engaging and high-quality visual experiences.
           </p>
         </motion.div>
 
