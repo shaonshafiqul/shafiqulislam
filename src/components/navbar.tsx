@@ -153,7 +153,9 @@ export default function Navbar() {
                 ))}
                  {/* Mobile Hire Me Button */}
                   <Link
-                    href="/contact"
+                    href="https://www.upwork.com/freelancers/~016c6bb1cb24751a63"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
                     className="mt-4 block w-full rounded-full border border-blue-500 px-6 py-3 text-center font-medium text-blue-400 transition-all duration-300 hover:bg-blue-500 hover:text-white"
                   >
