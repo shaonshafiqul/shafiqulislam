@@ -33,7 +33,7 @@ export const videoProjectsData = {
       cover_image: "veYFPks7baI",
       publish_date: "2026-5-30",
       client_name: "Peter Baker",
-      client_image: "/client/peter-baker.jpg",
+      client_image: "/client/Peter-Baker.jpg",
       client_feedback: "Shafiqul did an amazing job editing my finance video. The pacing, visuals, and storytelling made complex topics easy to understand. Highly recommended!",
       video_link: "https://youtu.be/veYFPks7baI",
       project_images: [],
@@ -75,7 +75,7 @@ export const videoProjectsData = {
       client_feedback: "The video was very informative and well-produced. It helped me understand trading strategies better.",
       video_link: "https://youtu.be/cx8MS85nMvw",
       project_images: [],
-      category: ["Talking Head", "Trading", "Finance"],
+      category: ["Talking Head", "Finance"],
       duration: "3:04 min",
       software_used: ["Final Cut Pro",],
     },
@@ -350,7 +350,24 @@ export const videoProjectsData = {
           software_used: ["Final Cut Pro", "After Effects"],
         }
       ],
-          
+      "Finance, Talking Head": [
+        {
+          id: "rcsW7ukRM8U",
+          video_title: "How I Turned Quitting My Job Into a $190M Business",
+          video_description: `A finance-focused YouTube video about turning the decision to quit a job into a successful business venture, edited with clean pacing, engaging visuals, B-roll, text animations, and storytelling techniques to make financial topics easy to understand.`,
+          tags: ["Finance", "Talking Head", "Entrepreneurship"],
+          cover_image: "rcsW7ukRM8U",
+          publish_date: "2026-01-10",
+          client_name: "Ibrahim Khan",
+          client_image: "/client/user.png",
+          client_feedback: "The video was very informative and well-produced. It provided valuable insights into entrepreneurship and business growth.",
+          video_link: "https://youtu.be/rcsW7ukRM8U",
+          project_images: [],
+          category: ["Finance", "Talking Head"],
+          duration: "5:25 min",
+          software_used: ["Final Cut Pro", "After Effects"],
+        }
+      ],
 };
 
 //--------------------------------------------------------------------------------------------------------------
@@ -429,7 +446,7 @@ export const allVideoProjects: VideoProject[] = [
       client_feedback: "The video was very informative and well-produced. It helped me understand trading strategies better.",
       video_link: "https://youtu.be/cx8MS85nMvw",
       project_images: [],
-      category: ["Talking Head", "Trading", "Finance"],
+      category: ["Talking Head", "Finance"],
       duration: "3:04 min",
       software_used: ["Final Cut Pro",],
     },
@@ -688,4 +705,21 @@ export const allVideoProjects: VideoProject[] = [
           duration: "3:49 min",
           software_used: ["Final Cut Pro", "After Effects"],
         },
+        //Finance, Talking Head
+        {
+          id: "rcsW7ukRM8U",
+          video_title: "How I Turned Quitting My Job Into a $190M Business",
+          video_description: `A finance-focused YouTube video about turning the decision to quit a job into a successful business venture, edited with clean pacing, engaging visuals, B-roll, text animations, and storytelling techniques to make financial topics easy to understand.`,
+          tags: ["Finance", "Talking Head", "Entrepreneurship"],
+          cover_image: "rcsW7ukRM8U",
+          publish_date: "2026-01-10",
+          client_name: "Ibrahim Khan",
+          client_image: "/client/user.png",
+          client_feedback: "The video was very informative and well-produced. It provided valuable insights into entrepreneurship and business growth.",
+          video_link: "https://youtu.be/rcsW7ukRM8U",
+          project_images: [],
+          category: ["Finance", "Talking Head"],
+          duration: "5:25 min",
+          software_used: ["Final Cut Pro", "After Effects"],
+        }
 ];
