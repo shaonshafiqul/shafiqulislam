@@ -16,4 +16,6 @@ export const categories = [
   "Social Media ",
   "Corporate",
   "Personal Branding",
+  "Interview",
+  "Entertainment",
 ];
