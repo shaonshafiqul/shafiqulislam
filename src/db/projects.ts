@@ -367,7 +367,7 @@ export const allVideoProjects: VideoProject[] = [
       cover_image: "veYFPks7baI",
       publish_date: "2026-5-30",
       client_name: "Peter Baker",
-      client_image: "/client/peter-baker.jpg",
+      client_image: "/client/baker.jpg",
       client_feedback: "Shafiqul did an amazing job editing my finance video. The pacing, visuals, and storytelling made complex topics easy to understand. Highly recommended!",
       video_link: "https://youtu.be/veYFPks7baI",
       project_images: [],
