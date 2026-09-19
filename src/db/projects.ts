@@ -1,26 +1,7 @@
 import { VideoProject } from "@/types/videos";
 
 export const videoProjectsData = {
-  "Talking Head": [
-    {
-      id: "W-L3jCpN7hI",
-      video_title: "Ready to Take Your Content to the Next Level?",
-      video_description: `I help creators, coaches, educators, businesses,
-      and personal brands turn raw footage into polished videos that are easy
-      to watch, visually engaging, and built around strong storytelling.`,
-      tags: ["Video editing", "Video edting services", "Final Cut Pro", "After Effects","Motion Graphics"],
-      cover_image: "W-L3jCpN7hI",
-      publish_date: "2026-08-24",
-      client_name: "Shafiqul Islam",
-      client_image: "/client/shafiqul-profile.png",
-      client_feedback: "",
-      video_link: "https://youtu.be/W-L3jCpN7hI",
-      project_images: [],
-      category: ["Talking Head",],
-      duration: "1:03 min",
-      software_used: ["Final Cut Pro","After Effects"],
-    },
-  ],
+
   "Talking Head, Finance": [
     {
       id: "veYFPks7baI",
@@ -373,26 +354,7 @@ export const videoProjectsData = {
 //--------------------------------------------------------------------------------------------------------------
 
 export const allVideoProjects: VideoProject[] = [
-  // Talking Head
-  {
-    id: "W-L3jCpN7hI",
-    video_title: "Ready to Take Your Content to the Next Level?",
-    video_description: `I help creators, coaches, educators, businesses,
-    and personal brands turn raw footage into polished videos that are easy
-    to watch, visually engaging, and built around strong storytelling.`,
-    tags: ["Video editing", "Video editing services", "Final Cut Pro", "After Effects","Motion Graphics"],
-    cover_image: "W-L3jCpN7hI",
-    publish_date: "2026-08-24",
-    client_name: "Shafiqul Islam",
-    client_image: "/client/shafiqul-profile.png",
-    client_feedback: "",
-    video_link: "https://youtu.be/W-L3jCpN7hI",
-    project_images: [],
-    category: ["Talking Head",],
-    duration: "1:03 min",
-    software_used: ["Final Cut Pro","After Effects"],
-  },
-  
+
   // Talking Head, Finance
     {
       id: "veYFPks7baI",
