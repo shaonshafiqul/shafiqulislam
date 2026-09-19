@@ -19,6 +19,44 @@ export default function HomePage() {
 
       <Hero />
 
+      {/* VSL Intro Section */}
+      <section className="px-4 pb-10 sm:px-6">
+        <div className="max-w-3xl mx-auto">
+
+          {/* Section Heading */}
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              <span className="bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent">
+                Watch My Introduction
+              </span>
+            </h2>
+
+            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed sm:mb-10 md:px-0">
+               Learn how I can help bring your vision to life.
+            </p>
+          </div>
+
+          {/* Intro Video */}
+          <div className="group relative rounded-3xl bg-gradient-to-br from-blue-500/40 via-white/10 to-purple-500/30 p-[1px] shadow-[0_0_60px_rgba(59,130,246,0.18)] transition-all duration-500 hover:shadow-[0_0_90px_rgba(59,130,246,0.32)]">
+
+            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500/30 via-cyan-400/20 to-purple-500/30 opacity-60 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+
+            <div className="relative aspect-video overflow-hidden rounded-[23px] border border-white/10 bg-black">
+
+              <iframe
+                className="absolute inset-0 h-full w-full scale-[1.01] transition-transform duration-700 group-hover:scale-[1.03]"
+                src="https://www.youtube.com/embed/W-L3jCpN7hI?si=AngkpU9K_DgZILRw"
+                title="Introduction video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
