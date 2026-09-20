@@ -349,6 +349,24 @@ export const videoProjectsData = {
           software_used: ["Final Cut Pro", "After Effects"],
         }
       ],
+      "Health & Wellness, Talking Head": [
+        {
+          id: "r0eXu_SpeBs",
+          video_title: "3 Best Shoulder Exercises for People Over 60",
+          video_description: `A health and wellness-focused YouTube video about the best shoulder exercises for people over 60, edited with clean pacing, engaging visuals, B-roll, text animations, and storytelling techniques to make fitness topics easy to understand.`,
+          tags: ["Health & Wellness", "Talking Head", "Fitness"],
+          cover_image: "r0eXu_SpeBs",
+          publish_date: "2026-02-15",
+          client_name: "Nathan Harison",
+          client_image: "/client/user.png",
+          client_feedback: "The video was very informative and well-produced. It provided valuable insights into shoulder exercises for older adults.",
+          video_link: "https://youtu.be/r0eXu_SpeBs",
+          project_images: [],
+          category: ["Health & Wellness", "Talking Head"],
+          duration: "3:27 min",
+          software_used: ["Final Cut Pro",],
+        }
+      ],
 };
 
 //--------------------------------------------------------------------------------------------------------------
@@ -683,5 +701,22 @@ export const allVideoProjects: VideoProject[] = [
           category: ["Finance", "Talking Head"],
           duration: "5:25 min",
           software_used: ["Final Cut Pro", "After Effects"],
+        },
+        //Health & Wellness, Talking Head
+        {
+          id: "r0eXu_SpeBs",
+          video_title: "3 Best Shoulder Exercises for People Over 60",
+          video_description: `A health and wellness-focused YouTube video about the best shoulder exercises for people over 60, edited with clean pacing, engaging visuals, B-roll, text animations, and storytelling techniques to make fitness topics easy to understand.`,
+          tags: ["Health & Wellness", "Talking Head", "Fitness"],
+          cover_image: "r0eXu_SpeBs",
+          publish_date: "2026-02-15",
+          client_name: "Nathan Harison",
+          client_image: "/client/user.png",
+          client_feedback: "The video was very informative and well-produced. It provided valuable insights into shoulder exercises for older adults.",
+          video_link: "https://youtu.be/r0eXu_SpeBs",
+          project_images: [],
+          category: ["Health & Wellness", "Talking Head"],
+          duration: "3:27 min",
+          software_used: ["Final Cut Pro",],
         }
 ];
